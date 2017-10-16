@@ -19,7 +19,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
   - HTTP 은 웹 상에서 데이터를  주고받을 수 있는 프로토콜이다.
 
-  - Android 에서는 HTTP 통신을 위해 `HttpURLConnection` 을 제공하고, 좀 더 편리한 `AsyncTask` 를 제공한다.
+  - Android 에서는 HTTP 통신을 위해 `HttpURLConnection` 을 제공하지만 Thread 를 직접 다뤄야해서 복잡하다. Android는 좀 더 편리한 `AsyncTask` 를 제공한다.
 
   - 외부 Library 로는 `retrofit`, `volley`, `okHttp`, `Rx` 등이 있다.
 
