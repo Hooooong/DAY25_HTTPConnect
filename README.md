@@ -27,7 +27,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
   - 권한 설정이 필요하다. 다행이도 Runtime Permission 이 아니기 때문에 `Manifest`에 `<uses-permission android:name="android.permission.INTERNET"/>` 을 설정만 해주면 된다.
 
-  - Android 는 내장 API 로 `HttpURLConnection` Class 를 제공한다.
+  - Android 는 내장 API 로 `HttpURLConnection`를 제공한다.
 
   - __`HttpURLConnection` 을 사용할 경우에는 `Main Thread` 가 아닌, `Sub Thread` 에서 사용해야 한다.__
 
@@ -166,7 +166,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
 - AsyncTask 예제
 
-  - 위에 설명한 `HttpURLConnection` 을 좀 더 쉽게 구현할 수 있다.
+  - 위에 설명한 `HttpURLConnection` 을 Thread 구현이 없이 좀 더 쉽게 구현할 수 있다.
 
   ```java
   AsyncTask<String, Integer, String> asyncTask = new AsyncTask<String, Integer, String>(){
@@ -199,3 +199,5 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
   // doInBackground 에 들어가는 parameter 를 정하는 메소드
   asyncTask.execute(url);
   ```
+
+- 참조 : [Asynctask](https://developer.android.com/reference/android/os/AsyncTask.html)
