@@ -25,7 +25,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
 - HTTPConnection 예제
 
-  - 권한 설정이 필요하다. 다행이도 Runtime Permission 이 아니기 때문에 `<uses-permission android:name="android.permission.INTERNET"/>` 을 설정만 해주면 된다.
+  - 권한 설정이 필요하다. 다행이도 Runtime Permission 이 아니기 때문에 `Manifest`에 `<uses-permission android:name="android.permission.INTERNET"/>` 을 설정만 해주면 된다.
 
   - Android 는 내장 API 로 `HttpURLConnection` Class 를 제공한다.
 
