@@ -25,7 +25,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
   - Android 는 내장 API 로 `HttpURLConnection`를 제공한다. 외부 Library 로는 `retrofit`, `volley`, `okHttp`, `Rx` 등이 있다.
 
-  - __`HttpURLConnection` 을 사용할 경우에는 `Main Thread` 가 아닌, `Sub Thread` 에서 사용해야 한다.__
+  - __`HttpURLConnection` 을 사용할 경우에는 Main Thread 가 아닌, Sub Thread 에서 사용해야 한다.__
 
   - `HttpURLConnection` 사용방법
 
@@ -164,7 +164,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
 - AsyncTask 예제
 
-  - 위에 설명한 `HttpURLConnection` 을 Thread 구현이 없이 좀 더 쉽게 구현할 수 있다.
+  - 위에 설명한 `HttpURLConnection` 의 사용을 직접적인 Thread 구현 없이 좀 더 쉽게 사용할 수 있다.
 
   ```java
   AsyncTask<String, Integer, String> asyncTask = new AsyncTask<String, Integer, String>(){
