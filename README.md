@@ -150,6 +150,10 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
   - AsyncTask 는 3가지 Generic Type 을 반드시 지정해야 한다.
 
+      1. doInBackground() 의 parameter 로 사용
+      2. onProgressUpdate() 의 parameter 로 사용, 주로 진행상태의 Percent 값 (Integer) 로 사용된다.
+      3. doInBackground() 의 return 값이면서 onPostExecute() 의 parameter
+
   - 5가지의 재정의 함수가 있지만, 반드시 필요한 메소드는 `doInBackground()` 이고 부가적으로 중요한 메소드는 `onPreExecute()` 와 `onPostExecute()` 가 있다.
 
   메소드 | 설명
