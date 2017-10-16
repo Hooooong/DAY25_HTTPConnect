@@ -29,7 +29,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
   - Android 는 내장 API 로 `HttpURLConnection` Class 를 제공한다.
 
-  - __`HttpURLConnection` 을 사용할 경우에는 `Main Thread` 가 아닌, `Sub THread` 에서 사용해야 한다.__
+  - __`HttpURLConnection` 을 사용할 경우에는 `Main Thread` 가 아닌, `Sub Thread` 에서 사용해야 한다.__
 
   - `HttpURLConnection` 사용방법
 
