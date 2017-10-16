@@ -19,19 +19,17 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
 
   - HTTP 은 웹 상에서 데이터를  주고받을 수 있는 프로토콜이다.
 
-  - Android 에서는 HTTP 통신을 위해 `HttpURLConnection` 을 제공하지만 Thread 를 직접 다뤄야해서 복잡하다. Android는 좀 더 편리한 `AsyncTask` 를 제공한다.
-
-  - 외부 Library 로는 `retrofit`, `volley`, `okHttp`, `Rx` 등이 있다.
+  - Android 에서는 HTTP 통신을 위해 `HttpURLConnection` 을 제공하지만 Thread 를 직접 작성해야하기 때문에 에외처리가 복잡하다. Android 에서는 편리한 `AsyncTask` 를 제공한다.
 
 - HTTPConnection 예제
 
-  - 권한 설정이 필요하다. 다행이도 Runtime Permission 이 아니기 때문에 `Manifest`에 `<uses-permission android:name="android.permission.INTERNET"/>` 을 설정만 해주면 된다.
-
-  - Android 는 내장 API 로 `HttpURLConnection`를 제공한다.
+  - Android 는 내장 API 로 `HttpURLConnection`를 제공한다. 외부 Library 로는 `retrofit`, `volley`, `okHttp`, `Rx` 등이 있다.
 
   - __`HttpURLConnection` 을 사용할 경우에는 `Main Thread` 가 아닌, `Sub Thread` 에서 사용해야 한다.__
 
   - `HttpURLConnection` 사용방법
+
+      0. 권한 설정 (`Manifest`에 `<uses-permission android:name="android.permission.INTERNET"/>`)
 
       1. URL 객체 선언 ( 웹 주소를 가지고 생성 )
 
