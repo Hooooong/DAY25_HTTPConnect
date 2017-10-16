@@ -179,6 +179,7 @@ HTTP를 통해 전달되는 자료는 http:로 시작하는 URL(인터넷 주소
       @Override
       protected String doInBackground(String... s) {
           String param1 = s[0];
+          // Remote.getData 메소드에서 HttpURLConnection 를 처리
           return Remote.getData(param1);
       }
       @Override
